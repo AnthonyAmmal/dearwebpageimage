@@ -40,6 +40,22 @@
             The visitors who come are enhanced by affection by placing Love Birds in the drawing room of the home in the south-west direction.
             </p>
             </div>
+        
+<script>
+    document.querySelectorAll('a[href^="#]').forEach(anchor=>{
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementById(targetId);
+            if(targetElement){
+                window.scrollTo({
+                    top:targetElement.offsetTop,
+                    behavoiur:'smooth'
+                });
+            }
+        });
+    });
+</script>
     </div>
     </body>
     </html>
